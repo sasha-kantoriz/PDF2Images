@@ -1,0 +1,7 @@
+.idea/
+venv/
+images/
+pdfs/
+output/
+*.pdf
+*.json

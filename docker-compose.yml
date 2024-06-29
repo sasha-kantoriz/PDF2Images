@@ -1,0 +1,10 @@
+services:
+  pdf2images:
+    build:
+      context: ./
+    restart: always
+    volumes:
+      - ./images:/app/images
+      - ./pdfs:/app/pdfs
+      - ./output:/app/output
+    command: python script.py

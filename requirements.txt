@@ -1,0 +1,6 @@
+defusedxml==0.7.1
+fonttools==4.53.0
+fpdf2==2.7.9
+pdf2image==1.17.0
+pillow==10.3.0
+watchdog==4.0.1
