@@ -1,0 +1,30 @@
+{
+  "templates": [
+    {
+      "type": 1,
+      "title": "PDF2Images",
+      "sub_title": "1.0",
+      "description": "PDF2Images is Ubuntu-based image generator from PDF files.",
+      "name": "docker-pdf2image",
+      "version": "latest",
+      "platform": "linux",
+      "image": "iwannabe/pdf2images",
+      "restart_policy": "always",
+      "auto_start_policy": "retain" ,
+      "volumes": [
+        {
+          "container": "/app/images",
+          "bind": "/Container/PDF2Images/images"
+        },
+        {
+          "container": "/app/pdfs",
+          "bind": "/Container/PDF2Images/pdfs"
+        },
+        {
+          "container": "/app/output",
+          "bind": "/Container/PDF2Images/output"
+        }
+      ]
+    }
+  ]
+}
